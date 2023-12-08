@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <!---------from here stepper section start------->
+      <div class="progress-stepper-container">
+        <div id="progress">
+          <div id="progress-bar"></div>
+          <ul id="progress-num">
+            <div class="step-container">
+              <li class="step">1</li>
+              <span class="step-name">Initial Information</span>
+            </div>
+            <div class="step-container">
+              <li class="step active">2</li>
+              <span class="step-name">Party Information</span>
+            </div>
+            <div class="step-container">
+              <li class="step">3</li>
+              <span class="step-name">Logistics</span>
+            </div>
+            <div class="step-container">
+              <li class="step">4</li>
+              <span class="step-name">Additional Services</span>
+            </div>
+          </ul>
+           
+        </div>
+      </div>
+      <!---------------------------------Party information section Start from here----------------------------- -->
+      <div class="section-container">
+        <form action="">
+          <div class="accordion-wrapper">
+            <!-- from here Booking party acordion start -->
+            <div class="accordion">
+              <i class="fa-solid fa-caret-down"></i>
+              <h3 class="according-heading">
+                Booking party Information(Enter as much possible)
+              </h3>
+            </div>
+            <div class="form-wrapper">
+              <div class="toggle-info-container">
+                <p class="account-info-toggle-button">
+                  Use infromation on account
+                </p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="row1-user-input">
+                <div class="input-container">
+                  <label class="input-container-label" for="">Firm Name</label>
+                  <input type="text" placeholder="Input" required />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Booking Contact Name</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Phone Number(No space)</label
+                  >
+                  <input type="number" placeholder="Type Here" required />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Billing Address</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Zip/Postal Code</label
+                  >
+                  <input type="number" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Country/City</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+              </div>
+              <div class="row2-user-input">
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Role</label>
+                  <select name="Role" id="Role" class="role">
+                    <option value="volvo">Student</option>
+                    <option value="saab">Teacher</option>
+                    <option value="opel">Admin</option>
+                    <option value="audi">Principle</option>
+                  </select>
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Name of Represnted client</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Lead counsel(s) Information</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" required />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Add Additional Counsel</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+              </div>
+            </div>
+            <!-- from here Opposing party acordion start -->
+            <div class="accordion">
+              <i class="fa-solid fa-caret-down"></i>
+              <h3 class="according-heading">Opposing Party Information</h3>
+            </div>
+            <div class="form-wrapper">
+              <div class="row1-user-input">
+                <div class="input-container">
+                  <label class="input-container-label" for="">Full Name</label>
+                  <input type="text" placeholder="Input" required />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Booking Contact Name</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Phone Number(No Space)</label
+                  >
+                  <input type="number" placeholder="Type Here" required />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Billing Address</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Zip/Postal Code</label
+                  >
+                  <input type="number" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Country/City</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+              </div>
+              <div class="row2-user-input">
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Role</label>
+                  <select name="Role" id="Role" class="role">
+                    <option value="volvo">Student</option>
+                    <option value="saab">Teacher</option>
+                    <option value="opel">Admin</option>
+                    <option value="audi">Principle</option>
+                  </select>
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Name of Represnted client</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Lead Counsel(s) Information</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="" required
+                    >Email</label
+                  >
+                  <input type="email" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Add Additional Counsel</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn progress-prev" id="progress-prev" disabled>
+              Back
+            </button>
+            <button
+              class="btn progress-next"
+              id="progress-next"
+              onclick="myFunction()"
+            >
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+      <!---------------------------------Logistic section Start from here----------------------------- -->
+      <div class="section-container" id="Logistic">
+        <form action="">
+          <div class="accordion-wrapper">
+            <!-- from here Basic Logistic acordion start -->
+            <div class="accordion">
+              <i class="fa-solid fa-caret-down"></i>
+              <h3 class="according-heading">Basic Logistics</h3>
+            </div>
+            <div class="form-wrapper">
+              <div class="upload-info-container2">
+                <p class="account-info-toggle-button">Upload Cover Page</p>
+                <div class="file-container">
+                  <label for="" class="file-label">Choose file here</label>
+                  <input type="file" id="myFile" name="filename" />
+                </div>
+              </div>
+              <div class="row1-user-input">
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Style of Cause</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Course File #</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for=""
+                    >Bookings Date</label
+                  >
+                  <input type="date" id="date" name="date" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for="">Start Time</label>
+                  <input type="time" id="start-time" name="start-time" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for="">End Time</label>
+                  <input type="time" id="end-time" name="end-time" />
+                </div>
+                <div class="input-container">
+                  <label class="input-container-label" for="">TimeZone</label>
+                  <select id="timezone" name="timezone" class="custom-select">
+                    <option value="Pacific/Honolulu">
+                      Pacific/Honolulu GMT-10:00
+                    </option>
+                    <option value="America/Anchorage">
+                      America/Anchorage GMT-9:00
+                    </option>
+                    <option value="America/Los_Angeles">
+                      America/Los_Angeles GMT-8:00
+                    </option>
+                    <option value="America/Boise">
+                      America/Boise GMT-7:00
+                    </option>
+                    <option value="America/Denver">
+                      America/Denver GMT-7:00
+                    </option>
+                    <option value="America/Phoenix">
+                      America/Phoenix GMT-7:00
+                    </option>
+                    <option value="America/Chicago">
+                      America/Chicago GMT-6:00
+                    </option>
+                    <option value="America/Detroit">
+                      America/Detroit GMT-5:00
+                    </option>
+                    <option value="America/New_York">
+                      America/New_York GMT-5:00
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="row3-user-input">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Arbitrator(s)</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Add Additional Arbitrator(s)</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+
+                <div class="toggle-info-container1 toggle-info-container1-mb">
+                  <p class="account-info-toggle-button">Tribunal Seceratory</p>
+                  <label class="switch">
+                    <input
+                      type="checkbox"
+                      id="toggleCheckbox"
+                      onchange="toggleRow(1)"
+                    />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="row4-user-input" id="row4-input">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Witness(es) Name</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Add Additional Witness(es)</label
+                  >
+                  <input type="text" placeholder="Type Here" />
+                </div>
+                <div class="input-container2">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+              </div>
+            </div>
+
+            <!-- from here Virtual Logistic acordion start -->
+            <div class="accordion">
+              <i class="fa-solid fa-caret-down"></i>
+              <h3 class="according-heading">Virtual Logistics</h3>
+            </div>
+            <div class="form-wrapper remov-min-hei">
+              <div class="vcm-container">
+                <div class="question-mark-container">
+                  <i class="fa-solid fa-question question"></i>
+                </div>
+                <div class="toggle-info-container2">
+                  <p class="account-info-toggle-button">
+                    Do You Require a VCM(Virtual Case Manager)?
+                  </p>
+                  <label class="switch">
+                    <input
+                      type="checkbox"
+                      id="reqire-Vcm"
+                      onchange="toggleRow(2)"
+                    />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="is-vcm" id="checeked-vcm">
+                <div class="question-mark-container">
+                  <i class="fa-solid fa-question question"></i>
+                </div>
+                <div class="input-container3 mobile-email">
+                  <label class="input-container-label" for="">Email</label>
+                  <input type="email" placeholder="Type Here" />
+                </div>
+              </div>
+              <div class="select-vcm vcm-column">
+                <div class="question-mark-container">
+                  <i class="fa-solid fa-question question"></i>
+                </div>
+                <div class="select-input-vcm-container">
+                  <div class="input-container2">
+                    <label class="input-container-label" for=""
+                      >Select a Virtual platform</label
+                    >
+                    <select name="virtual-platform" id="virtual-platform">
+                      <option value="Zoom">Zoom</option>
+                      <option value="Google-meet">Google-meet</option>
+                      <option value="MS-Team">MS-Team</option>
+                    </select>
+                  </div>
+                  <div class="input-container3">
+                    <label class="input-container-label" for=""
+                      >Number of Virtual Breaout rooms</label
+                    >
+                    <select name="virtual-rooms" id="virtual-rooms">
+                      <option value="2">2</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="platform-service-permision-container">
+                <div class="permission-access-container">
+                  <div class="vcm-container1 permission-mbile-width">
+                    <div class="question-mark-container">
+                      <i class="fa-solid fa-question question"></i>
+                    </div>
+                    <div class="toggle-info-container2">
+                      <p class="account-info-toggle-button">
+                        Do You need to us to provide document Managing Services?
+                      </p>
+                      <label class="switch" onclick="">
+                        <input
+                          type="checkbox"
+                          id="document-manage"
+                          onchange="toggleRow(3)"
+                        />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="permission-given" id="permission-given">
+                    <div class="permission-input-container">
+                      <div class="question-mark-container">
+                        <i class="fa-solid fa-question question"></i>
+                      </div>
+                      <div class="input-container5">
+                        <label
+                          class="input-container-label text-aligntment"
+                          for=""
+                          >Do you have any soecial Accomodation for your booking
+                          that our I.T. team can look into prior to the start
+                          date</label
+                        >
+                        <input type="text" placeholder="Type Here" />
+                      </div>
+                    </div>
+                    <div class="permission-allow-container">
+                      <div class="toggle-info-container4">
+                        <p class="account-info-toggle-button">
+                          Would you like to matter to be recorded
+                        </p>
+                        <label class="switch mt">
+                          <input type="checkbox" checked />
+                          <span class="slider round"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn progress-prev" id="progress-prev">Back</button>
+            <button
+              class="btn progress-next"
+              id="progress-next"
+              onclick="myFunction1()"
+            >
+              Next
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-------------------------------------Additional section start frpm here------------------------------------>
+
+      <div class="section-container" id="court-section">
+        <form action="">
+          <div class="accordion">
+            <i class="fa-solid fa-caret-down"></i>
+            <h3 class="according-heading">Court reportings</h3>
+          </div>
+
+          <div class="vcm-container">
+            <div class="toggle-info-container2">
+              <p class="account-info-toggle-button">
+                Will This matter plan to have a Court Reporter
+              </p>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  id="court-reporter-switch-button"
+                  onchange="toggleRow(4)"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="court-report-container" id="court-report-container">
+            <div class="vcm-container">
+              <div class="toggle-info-container2">
+                <p class="account-info-toggle-button">
+                  Would You like an Arbitrairation Place Reporter
+                </p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="select-vcm">
+              <div class="question-mark-container">
+                <i class="fa-solid fa-question question"></i>
+              </div>
+              <div class="select-input-vcm-container">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Is there a specific Arbitration Place Court Reporter you
+                    prefer?</label
+                  >
+                  <input type="email" placeholder="Type Here" />
+                </div>
+              </div>
+            </div>
+
+            <div class="vcm-container">
+              <div class="toggle-info-container2">
+                <p class="account-info-toggle-button">
+                  Will a transcript be required?
+                </p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="select-vcm">
+              <div class="question-mark-container">
+                <i class="fa-solid fa-question question"></i>
+              </div>
+              <div class="select-input-vcm-container">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Turnaround time?</label
+                  >
+                  <select name="virtual-platform" id="virtual-platform">
+                    <option value="Zoom">1 Hour</option>
+                    <option value="Google-meet">2 Hour</option>
+                    <option value="MS-Team">3 Hour</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="vcm-container">
+              <div class="question-mark-container">
+                <i class="fa-solid fa-question question"></i>
+              </div>
+              <div class="toggle-info-container2">
+                <p class="account-info-toggle-button">Multilingual</p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-container6 mobile-width-1">
+              <label class="input-container-label" for=""
+                >Please list the non english languages you would like
+                accommodated (separate by comma)</label
+              >
+              <input type="text" placeholder="Type Here" />
+            </div>
+
+            <div class="select-vcm">
+              <div class="question-mark-container">
+                <i class="fa-solid fa-question question"></i>
+              </div>
+              <div class="select-input-vcm-container">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Daily Rough Draft?</label
+                  >
+                  <select name="virtual-platform" id="virtual-platform">
+                    <option value="not-know">I Don't Know</option>
+                    <option value="know">I Know</option>
+                    <option value="can't-reveal">Can't Reveal</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="select-vcm">
+              <div class="question-mark-container">
+                <i class="fa-solid fa-question question"></i>
+              </div>
+              <div class="select-input-vcm-container">
+                <div class="input-container2">
+                  <label class="input-container-label" for=""
+                    >Realtime reporting?</label
+                  >
+                  <select name="virtual-platform" id="virtual-platform">
+                    <option value="not-know">I Don't Know</option>
+                    <option value="know">I Know</option>
+                    <option value="can't-reveal">Can't Reveal</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion">
+            <i class="fa-solid fa-caret-down"></i>
+            <h3 class="according-heading">Additional Features</h3>
+          </div>
+
+          <div class="vcm-container">
+            <div class="toggle-info-container2">
+              <p class="account-info-toggle-button">
+                Do you require interpretation?
+              </p>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  id="additional-feature-switch-button"
+                  onchange="toggleRow(5)"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="select-vcm" id="vcm-status-chnage">
+            <div class="question-mark-container">
+              <i class="fa-solid fa-question question"></i>
+            </div>
+            <div class="select-input-vcm-container">
+              <div class="input-container2 w-33">
+                <label class="input-container-label" for=""
+                  >Please list all languages to be interpreted (separate by
+                  comma)</label
+                >
+                <input type="email" placeholder="Type Here" />
+              </div>
+            </div>
+          </div>
+
+          <div class="vcm-container">
+            <div class="question-mark-container">
+              <i class="fa-solid fa-question question"></i>
+            </div>
+            <div class="toggle-info-container2">
+              <p class="account-info-toggle-button">
+                Do you require CART services?
+              </p>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  id="cart-service"
+                  onchange="toggleRow(6)"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+
+          <div class="confirmation" id="confirmation">
+            <div class="vcm-container ml-vcm">
+              <div class="toggle-info-container2">
+                <p class="account-info-toggle-button">
+                  Will you need a quote prior to confirmation?
+                </p>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="input-container6 mobile-width">
+              <label class="input-container-label" for=""
+                >Please list any additional requests or considerations you might
+                have at this time</label
+              >
+              <input type="text" placeholder="Type Here" />
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn progress-prev" id="progress-prev">Back</button>
+            <button
+              class="btn progress-next"
+              id="progress-next"
+              onclick="Finish()"
+            >
+              Finish
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
